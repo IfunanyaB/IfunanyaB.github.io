@@ -1,0 +1,531 @@
+@use "utils" as *;
+@use "global" as *;
+
+.project2page {
+  &.main {
+    display: flex;
+    flex-direction: column;
+    background: var(--src) center center / 100% 100% no-repeat;
+    overflow: hidden;
+  }
+
+  .aboutMeSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex_row {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 10px;
+    margin: 61px 20px 36px 24px;
+    max-width: 1396px;
+
+    @include md {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px 10px;
+    }
+
+    @include xs {
+      margin: 61px 16px 36px;
+    }
+
+    @include tn {
+      margin: 50px 8px 36px;
+    }
+  }
+
+  .logo_title {
+    width: 391px;
+    font: 400 44px/2.84 Frijole, Helvetica, Arial, serif;
+    color: rgb(27 12 118);
+    letter-spacing: 3.52px;
+    text-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+
+    @include md {
+      align-items: flex-start;
+      width: 100%;
+      font-size: 40px;
+    }
+
+    @include xxs {
+      font-size: 36px;
+    }
+  }
+
+  .nav_title {
+    margin: 34px 0 216px;
+    font: 700 24px/5.2 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(30 30 30);
+    letter-spacing: 1.71px;
+
+    @include md {
+      align-items: flex-start;
+      margin: 0;
+      width: 100%;
+      font-size: 22px;
+    }
+
+    @include xxs {
+      font-size: 20px;
+    }
+  }
+
+  .nav_title1 {
+    margin: 34px 0 216px;
+    font: 700 24px/5.2 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(30 30 30);
+    letter-spacing: 1.92px;
+
+    @include md {
+      align-items: flex-start;
+      margin: 0;
+      width: 100%;
+      font-size: 22px;
+    }
+
+    @include xxs {
+      font-size: 20px;
+    }
+  }
+
+  .digitalDesignSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .digitalDesignSection1 {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0 62px 6px;
+    max-width: 1090px;
+    background-color: rgb(57 70 192);
+    overflow: hidden;
+
+    @include tn {
+      margin: 25px 0 50px 6px;
+    }
+  }
+
+  .flex_row1 {
+    display: flex;
+    margin: 38px 33px 77px;
+
+    @include md {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px 0;
+      margin: 38px 32px 77px;
+    }
+
+    @include xs {
+      margin: 38px 16px 77px;
+    }
+
+    @include tn {
+      margin: 38px 8px 50px;
+    }
+  }
+
+  .digitalDesignSection_ {
+    margin: 281px 0 54px;
+    width: 617px;
+    font: 700 40px/3.12 Inika, Helvetica, Arial, serif;
+    color: rgb(255 255 255);
+
+    @include md {
+      align-items: flex-start;
+      margin: 0;
+      width: 100%;
+      font-size: 36px;
+    }
+
+    @include xxs {
+      font-size: 32px;
+    }
+  }
+
+  .image5 {
+    width: 692px;
+    min-width: 0;
+    object-fit: cover;
+
+    @include md {
+      width: 100%;
+      min-width: unset;
+      max-width: 692px;
+    }
+  }
+
+  .designOverviewSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex_col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 145px 0;
+    margin: 78px auto 0;
+    width: 96.04%;
+    max-width: 1383px;
+
+    @include xs {
+      gap: 80px 0;
+    }
+
+    @include tn {
+      gap: 50px 0;
+      margin: 50px auto 0;
+    }
+  }
+
+  .flex_col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 142px 0;
+    width: 100%;
+
+    @include xs {
+      gap: 80px 0;
+    }
+
+    @include tn {
+      gap: 50px 0;
+    }
+  }
+
+  .flex_col2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 94.87%;
+  }
+
+  .text_container_box {
+    width: 99.39%;
+
+    @include md {
+      align-items: flex-start;
+    }
+  }
+
+  .text_container {
+    font: 700 36px/1.38 Inika, Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+
+    @include md {
+      font-size: 32px;
+    }
+
+    @include xxs {
+      font-size: 30px;
+    }
+  }
+
+  .text_container_span0 {
+    font: 700 1em/1.38 Inika, Helvetica, Arial, serif;
+  }
+
+  .text_container_span1 {
+    font: 0.6666666666666666em/2.08 Inika, Helvetica, Arial, serif;
+  }
+
+  .text_container_span2 {
+    font: 700 1em/1.38 Inika, Helvetica, Arial, serif;
+  }
+
+  .text_container_span3 {
+    font: 0.6666666666666666em/2.08 Inika, Helvetica, Arial, serif;
+  }
+
+  .image6 {
+    margin: 109px 0 0;
+    width: 1029.03125px;
+    max-width: 85%;
+    object-fit: cover;
+
+    @include xs {
+      margin: 80px 0 0;
+    }
+
+    @include tn {
+      margin: 50px 0 0;
+    }
+  }
+
+  .text_container2 {
+    margin: 198px 0 0;
+    width: 99.39%;
+    font: 400 24px/2.08 Inika, Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+
+    @include md {
+      align-items: flex-start;
+      margin: 150px 0 0;
+      font-size: 22px;
+    }
+
+    @include xs {
+      margin: 80px 0 0;
+    }
+
+    @include xxs {
+      font-size: 20px;
+    }
+
+    @include tn {
+      margin: 50px 0 0;
+    }
+  }
+
+  .flex_col3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 238px 0;
+    width: 100%;
+
+    @include md {
+      gap: 150px 0;
+    }
+
+    @include xs {
+      gap: 80px 0;
+    }
+
+    @include tn {
+      gap: 50px 0;
+    }
+  }
+
+  .image7 {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .text_container21 {
+    width: 94.29%;
+    font: 400 24px/2.08 Inika, Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 22px;
+    }
+
+    @include xxs {
+      font-size: 20px;
+    }
+  }
+
+  .flex_col4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 122px 0;
+    width: 94.29%;
+
+    @include xs {
+      gap: 80px 0;
+    }
+
+    @include tn {
+      gap: 50px 0;
+    }
+  }
+
+  .placeholder {
+    width: 925.96875px;
+    max-width: 85%;
+    min-height: 737px;
+  }
+
+  .text_container3_box {
+    width: 100%;
+
+    @include md {
+      align-items: flex-start;
+    }
+  }
+
+  .text_container3 {
+    font: 700 36px/2.77 Inika, Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+
+    @include md {
+      font-size: 32px;
+    }
+
+    @include xxs {
+      font-size: 30px;
+    }
+  }
+
+  .text_container3_span0 {
+    font: 700 1em/2.77 Inika, Helvetica, Arial, serif;
+  }
+
+  .text_container3_span1 {
+    font: 0.6666666666666666em/4.16 Inika, Helvetica, Arial, serif;
+  }
+
+  .contactDetailsSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex_col5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 191px 0;
+    margin: 26px 0 264px 32.15%;
+    width: 409px;
+    max-width: 85%;
+
+    @include lg {
+      margin: 26px auto 264px;
+    }
+
+    @include md {
+      gap: 150px 0;
+      margin: 26px auto 150px;
+    }
+
+    @include xs {
+      gap: 80px 0;
+      margin: 26px auto 80px;
+    }
+
+    @include tn {
+      gap: 50px 0;
+      margin: 26px auto 50px;
+    }
+  }
+
+  .contact_details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 700 40px/3.12 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(30 30 30);
+    text-align: center;
+    letter-spacing: 3px;
+
+    @include md {
+      font-size: 36px;
+    }
+
+    @include xxs {
+      font-size: 32px;
+    }
+  }
+
+  .flex_row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 10px;
+    width: 100%;
+
+    @include tn {
+      column-gap: 8px;
+    }
+  }
+
+  .group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    min-width: 0;
+  }
+
+  .image1 {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .contactDetailsSection_ {
+    position: absolute;
+    bottom: -92px;
+    left: 50%;
+    width: 90px;
+    height: 125px;
+    font: 700 24px/5.2 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+    transform: translate(-50%, 0);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 22px;
+    }
+
+    @include xxs {
+      font-size: 20px;
+    }
+  }
+
+  .contactDetailsSection_1 {
+    position: absolute;
+    bottom: -92px;
+    left: 50%;
+    width: 73px;
+    height: 125px;
+    font: 700 24px/5.2 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+    transform: translate(-50%, 0);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 22px;
+    }
+
+    @include xxs {
+      font-size: 20px;
+    }
+  }
+
+  .group1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 85px;
+    min-width: 0;
+  }
+
+  .image3 {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    height: 86px;
+    object-fit: cover;
+  }
+
+  .contactDetailsSection_2 {
+    position: absolute;
+    bottom: -99px;
+    left: 50%;
+    width: 100px;
+    height: 125px;
+    font: 700 24px/5.2 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+    transform: translate(-50%, 0);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 22px;
+    }
+
+    @include xxs {
+      font-size: 20px;
+    }
+  }
+}

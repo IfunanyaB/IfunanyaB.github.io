@@ -1,0 +1,296 @@
+@use "utils" as *;
+@use "global" as *;
+
+.certificationspage {
+  &.main {
+    display: flex;
+    flex-direction: column;
+    background: var(--src) center center / 100% 100% no-repeat;
+    overflow: hidden;
+  }
+
+  .aboutMeSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex_row {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 10px;
+    margin: 61px 20px 40px 24px;
+    max-width: 1396px;
+
+    @include md {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px 10px;
+    }
+
+    @include xs {
+      margin: 61px 16px 40px;
+    }
+
+    @include tn {
+      margin: 50px 8px 40px;
+    }
+  }
+
+  .logo_title {
+    width: 391px;
+    font: 400 44px/2.84 Frijole, Helvetica, Arial, serif;
+    color: rgb(27 12 118);
+    letter-spacing: 3.52px;
+    text-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+
+    @include md {
+      align-items: flex-start;
+      width: 100%;
+      font-size: 40px;
+    }
+
+    @include xxs {
+      font-size: 36px;
+    }
+  }
+
+  .nav_bar {
+    margin: 34px 0 216px;
+    font: 700 24px/5.2 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(30 30 30);
+    letter-spacing: 1.71px;
+
+    @include md {
+      align-items: flex-start;
+      margin: 0;
+      width: 100%;
+      font-size: 22px;
+    }
+
+    @include xxs {
+      font-size: 20px;
+    }
+  }
+
+  .nav_bar1 {
+    margin: 34px 0 216px;
+    font: 700 24px/5.2 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(30 30 30);
+    letter-spacing: 1.92px;
+
+    @include md {
+      align-items: flex-start;
+      margin: 0;
+      width: 100%;
+      font-size: 22px;
+    }
+
+    @include xxs {
+      font-size: 20px;
+    }
+  }
+
+  .certificationsSection {
+    display: flex;
+    flex-direction: column;
+    min-height: 700px;
+    background-color: rgb(255 255 255);
+  }
+
+  .certifications {
+    display: flex;
+    justify-content: center;
+    margin: 273px auto 302px;
+    font: 700 40px/3.12 Inika, Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+    text-align: center;
+  }
+
+  .imageGallerySection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex_col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 145px 0;
+    margin: 39px 0 30px 2px;
+    max-width: 1438px;
+
+    @include xs {
+      gap: 80px 0;
+    }
+
+    @include tn {
+      gap: 50px 0;
+    }
+  }
+
+  .image5 {
+    width: 99%;
+    object-fit: cover;
+  }
+
+  .image7 {
+    width: 99%;
+    object-fit: cover;
+  }
+
+  .contactDetailsSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex_col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 191px 0;
+    margin: 70px 0 264px 32.15%;
+    width: 409px;
+    max-width: 85%;
+
+    @include lg {
+      margin: 70px auto 264px;
+    }
+
+    @include md {
+      gap: 150px 0;
+      margin: 70px auto 150px;
+    }
+
+    @include xs {
+      gap: 80px 0;
+      margin: 70px auto 80px;
+    }
+
+    @include tn {
+      gap: 50px 0;
+      margin: 50px auto;
+    }
+  }
+
+  .contactDetailsSection_ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 700 40px/3.12 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(30 30 30);
+    text-align: center;
+    letter-spacing: 3px;
+
+    @include md {
+      font-size: 36px;
+    }
+
+    @include xxs {
+      font-size: 32px;
+    }
+  }
+
+  .flex_row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 10px;
+    width: 100%;
+
+    @include tn {
+      column-gap: 8px;
+    }
+  }
+
+  .contactDetailsSection__ {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    min-width: 0;
+  }
+
+  .image1 {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .contactDetailsSection1 {
+    position: absolute;
+    bottom: -92px;
+    left: 50%;
+    width: 90px;
+    height: 125px;
+    font: 700 24px/5.2 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+    transform: translate(-50%, 0);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 22px;
+    }
+
+    @include xxs {
+      font-size: 20px;
+    }
+  }
+
+  .contactDetailsSection2 {
+    position: absolute;
+    bottom: -92px;
+    left: 50%;
+    width: 73px;
+    height: 125px;
+    font: 700 24px/5.2 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+    transform: translate(-50%, 0);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 22px;
+    }
+
+    @include xxs {
+      font-size: 20px;
+    }
+  }
+
+  .contactDetailsSection__1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 85px;
+    min-width: 0;
+  }
+
+  .image3 {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    height: 86px;
+    object-fit: cover;
+  }
+
+  .contactDetailsSection3 {
+    position: absolute;
+    bottom: -99px;
+    left: 50%;
+    width: 100px;
+    height: 125px;
+    font: 700 24px/5.2 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+    transform: translate(-50%, 0);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 22px;
+    }
+
+    @include xxs {
+      font-size: 20px;
+    }
+  }
+}

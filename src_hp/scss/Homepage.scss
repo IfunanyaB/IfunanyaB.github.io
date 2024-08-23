@@ -1,0 +1,578 @@
+@use "utils" as *;
+@use "global" as *;
+
+.homepage {
+  &.main {
+    display: flex;
+    flex-direction: column;
+    background: var(--src) center center / 100% 100% no-repeat;
+    overflow: hidden;
+  }
+
+  .aboutMeSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex_row {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 10px;
+    margin: 61px 20px 29px 24px;
+    max-width: 1396px;
+
+    @include md {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px 10px;
+    }
+
+    @include xs {
+      margin: 61px 16px 29px;
+    }
+
+    @include tn {
+      margin: 50px 8px 29px;
+    }
+  }
+
+  .logo_name {
+    width: 391px;
+    font: 400 44px/2.84 Frijole, Helvetica, Arial, serif;
+    color: rgb(27 12 118);
+    letter-spacing: 3.52px;
+    text-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+
+    @include md {
+      align-items: flex-start;
+      width: 100%;
+      font-size: 40px;
+    }
+
+    @include xxs {
+      font-size: 36px;
+    }
+  }
+
+  .navbar_title {
+    margin: 34px 0 216px;
+    font: 700 24px/5.2 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(30 30 30);
+    letter-spacing: 1.71px;
+
+    @include md {
+      align-items: flex-start;
+      margin: 0;
+      width: 100%;
+      font-size: 22px;
+    }
+
+    @include xxs {
+      font-size: 20px;
+    }
+  }
+
+  .navbar_title1 {
+    margin: 34px 0 216px;
+    font: 700 24px/5.2 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(30 30 30);
+    letter-spacing: 1.92px;
+
+    @include md {
+      align-items: flex-start;
+      margin: 0;
+      width: 100%;
+      font-size: 22px;
+    }
+
+    @include xxs {
+      font-size: 20px;
+    }
+  }
+
+  .aboutMeSection_1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex_col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px 0;
+    margin: 90px 8.33% 129px auto;
+    width: 1066.03125px;
+    max-width: 85%;
+
+    @include xl {
+      margin: 90px auto 129px;
+    }
+
+    @include xs {
+      margin: 80px auto;
+    }
+
+    @include tn {
+      margin: 50px auto;
+    }
+  }
+
+  .aboutMe {
+    width: 100%;
+    font: 700 40px/3.12 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(30 30 30);
+    letter-spacing: 2.8px;
+
+    @include md {
+      align-items: flex-start;
+      font-size: 36px;
+    }
+
+    @include xxs {
+      font-size: 32px;
+    }
+  }
+
+  .flex_col1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 245px;
+    width: 94.75%;
+  }
+
+  .aboutMe_TextContainer_box {
+    @include xl {
+      align-items: flex-start;
+    }
+  }
+
+  .aboutMe_TextContainer {
+    font: 400 24px/2.08 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+
+    @include xl {
+      text-align: justify;
+      font-size: 24px;
+    }
+
+    @include md {
+      font-size: 22px;
+    }
+
+    @include xxs {
+      font-size: 20px;
+    }
+  }
+
+  .aboutMe_TextContainer_span0 {
+    font: 1.5em/1.38 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(27 12 117);
+  }
+
+  .aboutMe_TextContainer_span1 {
+    font: 1em/2.08 "Inria Serif", Helvetica, Arial, serif;
+  }
+
+  .aboutMe_TextContainer1 {
+    font: 400 24px/2.08 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+
+    @include xl {
+      align-items: flex-start;
+      text-align: justify;
+      font-size: 24px;
+    }
+
+    @include md {
+      font-size: 22px;
+    }
+
+    @include xxs {
+      font-size: 20px;
+    }
+  }
+
+  .aboutMe_TextContainer1_span0 {
+    font: 1em/2.08 "Inria Serif", Helvetica, Arial, serif;
+  }
+
+  .educationSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex_col2 {
+    display: flex;
+    flex-direction: column;
+    gap: 85px 0;
+    margin: 62px 36px 205px auto;
+    width: 1147.953125px;
+    max-width: 85%;
+
+    @include md {
+      margin: 62px 32px 150px auto;
+    }
+
+    @include xs {
+      gap: 80px 0;
+      margin: 62px 16px 80px auto;
+    }
+
+    @include tn {
+      gap: 50px 0;
+      margin: 50px 8px 50px auto;
+    }
+  }
+
+  .education_title {
+    font: 700 40px/3.12 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(30 30 30);
+    letter-spacing: 3.2px;
+
+    @include md {
+      align-items: flex-start;
+      font-size: 36px;
+    }
+
+    @include xxs {
+      font-size: 32px;
+    }
+  }
+
+  .content_box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 auto;
+    width: 899.984375px;
+    max-width: 85%;
+    background: var(--src) center center / cover no-repeat;
+    filter: drop-shadow(0 4px 4px rgb(0 0 0 / 70%));
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    margin: 300px auto;
+    width: 258px;
+    font: 400 36px/1.22 Roboto, Helvetica, Arial, serif;
+    color: rgb(245 245 245);
+    text-align: center;
+    background-color: rgb(0 0 0);
+    border-radius: 8px;
+    padding: 24.5px 8px;
+    outline: 1px solid rgb(44 44 44);
+    outline-offset: -1px;
+  }
+
+  .projectsSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projectsSection1 {
+    display: flex;
+    flex-direction: column;
+    margin: 227px 2.92% 169px auto;
+    width: 1138.03125px;
+    max-width: 85%;
+
+    @include md {
+      margin: 150px 2.92% 150px auto;
+    }
+
+    @include xs {
+      margin: 80px 2.92% 80px auto;
+    }
+
+    @include tn {
+      margin: 50px 2.92% 50px auto;
+    }
+  }
+
+  .flex_col3 {
+    display: flex;
+    flex-direction: column;
+    gap: 51px 0;
+
+    @include tn {
+      gap: 50px 0;
+    }
+  }
+
+  .project_title {
+    font: 700 40px/3.12 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(30 30 30);
+    letter-spacing: 3.2px;
+
+    @include md {
+      align-items: flex-start;
+      font-size: 36px;
+    }
+
+    @include xxs {
+      font-size: 32px;
+    }
+  }
+
+  .content_box1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 auto;
+    width: 900.0625px;
+    max-width: 85%;
+    background: var(--src) center center / cover no-repeat;
+    filter: drop-shadow(0 4px 4px rgb(0 0 0 / 70%));
+
+    @include xxl {
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    @include xs {
+      background-size: cover;
+    }
+  }
+
+  .btn1 {
+    display: flex;
+    justify-content: center;
+    margin: 300px auto;
+    width: 205px;
+    font: 400 28px/1.28 Roboto, Helvetica, Arial, serif;
+    color: rgb(245 245 245);
+    text-align: center;
+    background-color: rgb(103 80 164);
+    border-radius: 8px;
+    padding: 28.5px 8px;
+    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+  }
+
+  .certificationsSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex_col4 {
+    display: flex;
+    flex-direction: column;
+    gap: 77px 0;
+    margin: 152px 27px 100px auto;
+    width: 1153px;
+    max-width: 85%;
+
+    @include md {
+      margin: 150px 27px 100px auto;
+    }
+
+    @include xs {
+      margin: 80px 16px 80px auto;
+    }
+
+    @include tn {
+      gap: 50px 0;
+      margin: 50px 8px 50px auto;
+    }
+  }
+
+  .certificate_title {
+    font: 700 40px/3.12 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(30 30 30);
+    letter-spacing: 3.2px;
+
+    @include md {
+      align-items: flex-start;
+      font-size: 36px;
+    }
+
+    @include xxs {
+      font-size: 32px;
+    }
+  }
+
+  .content_box11 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 auto;
+    width: 900.03125px;
+    max-width: 85%;
+    background: var(--src) center center / cover no-repeat;
+    filter: drop-shadow(0 4px 4px rgb(0 0 0 / 70%));
+
+    @include tn {
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .btn2 {
+    display: flex;
+    justify-content: center;
+    margin: 347px 0 253px 37%;
+    width: 205px;
+    font: 400 28px/1.28 Roboto, Helvetica, Arial, serif;
+    color: rgb(245 245 245);
+    text-align: center;
+    background-color: rgb(103 80 164);
+    border-radius: 8px;
+    padding: 28.5px 8px;
+    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+  }
+
+  .contactDetailsSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex_col5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 191px 0;
+    margin: 76px 0 264px 32.15%;
+    width: 409px;
+    max-width: 85%;
+
+    @include lg {
+      margin: 76px auto 264px;
+    }
+
+    @include md {
+      gap: 150px 0;
+      margin: 76px auto 150px;
+    }
+
+    @include xs {
+      gap: 80px 0;
+      margin: 76px auto 80px;
+    }
+
+    @include tn {
+      gap: 50px 0;
+      margin: 50px auto;
+    }
+  }
+
+  .contact_details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 700 40px/3.12 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(30 30 30);
+    text-align: center;
+    letter-spacing: 3px;
+
+    @include md {
+      font-size: 36px;
+    }
+
+    @include xxs {
+      font-size: 32px;
+    }
+  }
+
+  .flex_row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 10px;
+    width: 100%;
+
+    @include tn {
+      column-gap: 8px;
+    }
+  }
+
+  .group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    min-width: 0;
+  }
+
+  .image1 {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .contact_details1 {
+    position: absolute;
+    bottom: -92px;
+    left: 50%;
+    width: 90px;
+    height: 125px;
+    font: 700 24px/5.2 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+    transform: translate(-50%, 0);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 22px;
+    }
+
+    @include xxs {
+      font-size: 20px;
+    }
+  }
+
+  .contact_details2 {
+    position: absolute;
+    bottom: -92px;
+    left: 50%;
+    width: 73px;
+    height: 125px;
+    font: 700 24px/5.2 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+    transform: translate(-50%, 0);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 22px;
+    }
+
+    @include xxs {
+      font-size: 20px;
+    }
+  }
+
+  .group1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 85px;
+    min-width: 0;
+  }
+
+  .image3 {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    height: 86px;
+    object-fit: cover;
+  }
+
+  .contact_details3 {
+    position: absolute;
+    bottom: -99px;
+    left: 50%;
+    width: 100px;
+    height: 125px;
+    font: 700 24px/5.2 "Inria Serif", Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+    transform: translate(-50%, 0);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 22px;
+    }
+
+    @include xxs {
+      font-size: 20px;
+    }
+  }
+}
